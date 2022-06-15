@@ -1,0 +1,121 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        /* ### Neutral */
+        --main-BG: hsl(217, 54%, 11%);
+        --card-BG: hsl(216, 50%, 16%);
+        --line: hsl(215, 32%, 27%);
+        --White: hsl(0, 0%, 100%);
+        /* ### Primary */
+        --Soft-blue: hsl(215, 51%, 70%);
+        --Cyan: hsl(178, 100%, 50%); 
+    } 
+ 
+    body{
+        font-family: 'Outfit', sans-serif;
+        margin: 10px;
+        height: 100vh;
+        background-color: var(--main-BG);
+        font-size: 18px;
+    }
+    @media (min-width:375px){
+        
+        div.card{
+            width: 355px;
+        }
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    div.card{
+        padding: 20px;
+        margin: 8px;
+        background-color: var(--card-BG);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 40px 20px;
+    }
+    .card img.equilibrium{
+        max-width: 100%;
+        border-radius: 10px;
+        margin: 0.4em;
+        }
+    .text h3{
+        color: var(--White);
+        font-weight: 600;
+        font-size: 23px;
+        margin: 20px 10px;
+        cursor: pointer;
+    }
+    p.equilibrium{
+        color:var(--Soft-blue);
+        margin: 20px 10px;
+    }
+    .ethereum-clock{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+        }
+    h3{
+        color: var(--White);
+    }
+    h4{
+        color: var(--Cyan);
+    }
+    p.clock{
+        color:var(--Soft-blue);
+        text-align: end;
+        }
+    hr{
+        margin: 15px;
+        opacity: 0.2;
+        }
+        
+    .avatar-Jules{
+        display: flex;
+        align-items: center;
+        }
+    img.avatar{
+        width: 15%;
+        border-radius: 25px;
+        border: 1px solid white;
+        }     
+    p.Jules{
+        font-weight: 300;
+        color: var(--Soft-blue);
+        margin-left: 15px;  
+        }
+    span{
+        color: var(--White);
+        cursor: pointer;
+        }
+    .attribution { 
+        margin-top: 20px;
+        font-size: 11px; 
+        text-align: center; 
+        color: rgb(253, 253, 253); 
+        }
+        
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+        }
+
+        h3:hover{
+        
+            color: var(--Cyan);
+        }
+    span:hover{
+        color: var(--Cyan)
+        }
+    p.clock:hover{
+        cursor:grab;
+        }
+    
+
