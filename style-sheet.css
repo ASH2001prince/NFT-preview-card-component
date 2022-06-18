@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Outfit:wght@300;400;600&display=swap');
     *{
         margin: 0;
         padding: 0;
@@ -40,12 +40,37 @@
         flex-flow: column nowrap;
         justify-content: center;
         border-radius: 20px;
-        box-shadow: 0px 0px 40px 20px;
+        box-shadow: 0 0 0 20px rgb(0 0 0 / 5%);
     }
-    .card img.equilibrium{
-        max-width: 100%;
+    .card .nft-image::after{    
+        content: url(images/icon-view.svg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 98%;
+        opacity: 0;
+        width: 100%;
+        position: absolute;
+        background-color: hsl(178, 100%, 50%, 40%);;
+        top: 0;
+        cursor: pointer;
         border-radius: 10px;
-        margin: 0.4em;
+        transition: opacity 0.4s ease-in-out;
+
+    }
+   .nft-image:hover::after{
+        opacity: 1;
+    }
+
+
+    .nft-image{
+        position: relative;
+       
+        }
+        .nft{
+            max-width: 100%;
+            border-radius: 10px;
+           
         }
     .text h3{
         color: var(--White);
@@ -53,10 +78,12 @@
         font-size: 23px;
         margin: 20px 10px;
         cursor: pointer;
+        transition: 0.5s;
     }
     p.equilibrium{
         color:var(--Soft-blue);
         margin: 20px 10px;
+        line-height: 2.5rem;
     }
     .ethereum-clock{
         display: flex;
@@ -65,13 +92,22 @@
         }
     h3{
         color: var(--White);
+        
     }
     h4{
         color: var(--Cyan);
     }
+    .icon-ethereum{
+        margin: -1px;
+    margin-left: 8px;
+    }
     p.clock{
         color:var(--Soft-blue);
         text-align: end;
+        }
+        .icon-clock{
+        margin: -1px;
+
         }
     hr{
         margin: 15px;
@@ -91,6 +127,7 @@
         font-weight: 300;
         color: var(--Soft-blue);
         margin-left: 15px;  
+        letter-spacing: 1px;
         }
     span{
         color: var(--White);
